@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "lFUNl0wyw7Y=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\proat\\source\\repos\\TModModpackHelper\\TModModpackHelper\\TModModpackHelper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\proat\\.nuget\\packages\\atksharp\\3.24.24.117-develop\\atksharp.3.24.24.117-develop.nupkg.sha512",
+    "C:\\Users\\proat\\.nuget\\packages\\cairosharp\\3.24.24.117-develop\\cairosharp.3.24.24.117-develop.nupkg.sha512",
+    "C:\\Users\\proat\\.nuget\\packages\\gdksharp\\3.24.24.117-develop\\gdksharp.3.24.24.117-develop.nupkg.sha512",
+    "C:\\Users\\proat\\.nuget\\packages\\giosharp\\3.24.24.117-develop\\giosharp.3.24.24.117-develop.nupkg.sha512",
+    "C:\\Users\\proat\\.nuget\\packages\\glibsharp\\3.24.24.117-develop\\glibsharp.3.24.24.117-develop.nupkg.sha512",
+    "C:\\Users\\proat\\.nuget\\packages\\gtksharp\\3.24.24.117-develop\\gtksharp.3.24.24.117-develop.nupkg.sha512",
+    "C:\\Users\\proat\\.nuget\\packages\\pangosharp\\3.24.24.117-develop\\pangosharp.3.24.24.117-develop.nupkg.sha512"
+  ],
+  "logs": []
+}

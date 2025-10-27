@@ -1,0 +1,6 @@
+/.vs
+TModModpackHelper/bin
+TModModpackHelper/obj/Debug
+TModModpackHelper/obj/publish
+TModModpackHelper/obj/Release
+TModModpackHelper/TModModpackHelper.csproj.user
