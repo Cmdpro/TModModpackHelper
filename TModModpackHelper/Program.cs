@@ -44,27 +44,7 @@ namespace TModModpackHelper
 
             Application.Init();
 
-            string steamcmdDirectory = Path.Combine(Settings.dataPath, "steamcmd");
-            if (!Directory.Exists(steamcmdDirectory))
-            {
-                string steamcmdZip = Path.Combine(Settings.dataPath, "steamcmd.zip");
-                Directory.CreateDirectory(steamcmdDirectory);
-                using (HttpClient client = new HttpClient())
-                {
-                    Task<HttpResponseMessage> task = client.GetAsync(platform.GetSteamcmdInstallLink(), HttpCompletionOption.ResponseHeadersRead);
-                    task.Wait();
-                    HttpResponseMessage response = task.Result;
-                    response.EnsureSuccessStatusCode();
-                    using (var streamToReadFrom = response.Content.ReadAsStream())
-                    using (var streamToWriteTo = new FileStream(steamcmdZip, FileMode.Create))
-                    {
-                        streamToReadFrom.CopyTo(streamToWriteTo);
-                    }
-                }
-                ZipFile.ExtractToDirectory(steamcmdZip, steamcmdDirectory);
-                File.Delete(steamcmdZip);
-            }
-            ModInstallationHelper.steamcmd = Path.Combine(steamcmdDirectory, platform.GetSteamcmdFile());
+            platform.SteamCmdCheck();
 
             //if (Directory.Exists(Path.Combine(Settings.dataPath, "Testing"))) Directory.Delete(Path.Combine(Settings.dataPath, "Testing"), true);
             //ImportModpack(Path.Combine(Settings.dataPath, "Testing.zip"));

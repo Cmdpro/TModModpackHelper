@@ -8,8 +8,7 @@ namespace TModModpackHelper.Platform
 {
     public abstract class Platform
     {
-        public abstract string GetSteamcmdInstallLink();
-        public abstract string GetSteamcmdFile();
+        public abstract void SteamCmdCheck();
         public abstract void OpenFolder(string path);
     }
 }
