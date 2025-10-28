@@ -317,7 +317,7 @@ namespace TModModpackHelper.Screens
         {
             foreach (var i in box.Children)
             {
-                box.Remove(i);
+                i.Destroy();
             }
             foreach (Mod i in modpack.modlist)
             {
