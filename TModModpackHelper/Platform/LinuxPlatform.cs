@@ -53,6 +53,7 @@ namespace TModModpackHelper.Platform
         public bool IsSteamCmdInstalled()
         {
             Process process = Process.Start("which", "steamcmd");
+            process.WaitForExit();
             return process.StandardOutput.ReadToEnd().EndsWith("/steamcmd");
         }
     }
